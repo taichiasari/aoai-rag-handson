@@ -1,6 +1,7 @@
 param location string = 'eastus'
 param openAiServiceName string = 'my-openai-service'
 param searchServiceName string = 'rag-handson-search'
+param documentIntelligenceServiceName string = 'my-document-intelligence'
 
 resource openAiService 'Microsoft.CognitiveServices/accounts@2023-10-01-preview' = {
   name: openAiServiceName
@@ -16,12 +17,22 @@ resource searchService 'Microsoft.Search/searchServices@2020-03-13' = {
   name: searchServiceName
   location: location
   sku: {
-    name: 'standard'
+    name: 'basic'
   }
   properties: {
     replicaCount: 1
     partitionCount: 1
   }
+}
+
+resource documentIntelligenceService 'Microsoft.CognitiveServices/accounts@2023-10-01-preview' = {
+  name: documentIntelligenceServiceName
+  location: location
+  kind: 'FormRecognizer'
+  sku: {
+    name: 'S0'
+  }
+  properties: {}
 }
 
 resource gptdeployment 'Microsoft.CognitiveServices/accounts/deployments@2023-05-01' = {
