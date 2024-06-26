@@ -52,4 +52,7 @@ resource embeddingdeployment 'Microsoft.CognitiveServices/accounts/deployments@2
     name: 'Standard'
     capacity: 20
   }
+  dependsOn: [
+    gptdeployment
+  ]
 }
