@@ -17,7 +17,7 @@ resource searchService 'Microsoft.Search/searchServices@2020-03-13' = {
   name: searchServiceName
   location: location
   sku: {
-    name: 'basic'
+    name: 'standard'
   }
   properties: {
     replicaCount: 1
