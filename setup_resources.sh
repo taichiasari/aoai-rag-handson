@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Azure CLIを使用してAzureにログインします
-az login --use-device-code
+# az login --use-device-code
 
 # リソースグループを作成します
 az group create --name rg-rag-handson --location eastus
