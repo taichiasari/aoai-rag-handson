@@ -19,14 +19,14 @@ az group delete --name rg-rag-handson
 
 1. **リポジトリのフォーク**
     - このリポジトリを自分のGitHubアカウントにフォークします。
-    ![Fork Image 1](/workspaces/aoai-rag-handson/assets/fork1.png)
-    ![Fork Image 2](/workspaces/aoai-rag-handson/assets/fork2.png)
+    ![Fork Image 1](/aoai-rag-handson/assets/fork1.png)
+    ![Fork Image 2](/aoai-rag-handson/assets/fork2.png)
 
 2. **Codespacesの作成**
     - フォークしたリポジトリに移動し、リポジトリ名の下にある「Code」ボタンをクリックします。
-    ![Codespaces Image 1](/workspaces/aoai-rag-handson/assets/codespaces1.png)
+    ![Codespaces Image 1](/aoai-rag-handson/assets/codespaces1.png)
     - 「Codespaces」タブを選択し、「Create codespace on main」をクリックします。
-    ![Codespaces Image 2](/workspaces/aoai-rag-handson/assets/codespaces2.png)
+    ![Codespaces Image 2](/aoai-rag-handson/assets/codespaces2.png)
 
 3. **Codespacesの起動と初期設定**
     - Codespacesの環境が起動するのを待ちます。初回の起動には数分かかることがあります。
